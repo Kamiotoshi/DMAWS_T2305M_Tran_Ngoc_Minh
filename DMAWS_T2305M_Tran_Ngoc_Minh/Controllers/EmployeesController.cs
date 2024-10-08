@@ -30,7 +30,6 @@ public class EmployeesController : ControllerBase
             e.EmployeeName,
             e.EmployeeDOB,
             e.EmployeeDepartment,
-            e.Email,
             Projects = e.ProjectEmployees.Select(pe => new
             {
                 pe.Projects.ProjectId,
@@ -57,7 +56,6 @@ public class EmployeesController : ControllerBase
             employee.EmployeeName,
             employee.EmployeeDOB,
             employee.EmployeeDepartment,
-            employee.Email,
             Projects = employee.ProjectEmployees.Select(pe => new
             {
                 pe.Projects.ProjectId,

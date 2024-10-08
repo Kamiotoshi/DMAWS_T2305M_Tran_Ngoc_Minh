@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DMAWS_T2305M_Tran_Ngoc_Minh.Migrations
 {
     [DbContext(typeof(DMAWSContext))]
-    [Migration("20241008034824_InitialCreate")]
+    [Migration("20241008041647_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -32,10 +32,6 @@ namespace DMAWS_T2305M_Tran_Ngoc_Minh.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EmployeeId"));
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("EmployeeDOB")
                         .HasColumnType("datetime2");

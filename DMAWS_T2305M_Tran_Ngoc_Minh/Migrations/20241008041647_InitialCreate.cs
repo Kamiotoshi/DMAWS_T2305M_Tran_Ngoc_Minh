@@ -19,8 +19,7 @@ namespace DMAWS_T2305M_Tran_Ngoc_Minh.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     EmployeeName = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
                     EmployeeDOB = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    EmployeeDepartment = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    EmployeeDepartment = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {

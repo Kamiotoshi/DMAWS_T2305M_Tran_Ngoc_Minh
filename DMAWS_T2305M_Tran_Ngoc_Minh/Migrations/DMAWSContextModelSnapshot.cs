@@ -30,10 +30,6 @@ namespace DMAWS_T2305M_Tran_Ngoc_Minh.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EmployeeId"));
 
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<DateTime>("EmployeeDOB")
                         .HasColumnType("datetime2");
 

@@ -15,10 +15,6 @@ public class Employee
     [Required]
     public string EmployeeDepartment { get; set; }
 
-    [Required]
-    [EmailAddress]
-    public string Email { get; set; } // Email must be valid
-
     public virtual ICollection<ProjectEmployee>? ProjectEmployees { get; set; }
 
     // Validation for EmployeeDOB to ensure age > 16 years
