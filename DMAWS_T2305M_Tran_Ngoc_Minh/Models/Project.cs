@@ -17,7 +17,7 @@ public class Project
     public DateTime? ProjectEndDate { get; set; } // Ngày kết thúc dự án, có thể null nếu dự án đang thực hiện
 
     // Không bắt buộc khi tạo dự án, chỉ cần khi có nhân viên tham gia
-    public virtual ICollection<ProjectEmployee>? ProjectEmployees { get; set; }
+    public virtual ICollection<ProjectEmployee>? ProjectEmployees { get; set; } = new List<ProjectEmployee>(); // Khởi tạo một danh sách trống
 
     // Custom validation to ensure ProjectStartDate < ProjectEndDate
     public static ValidationResult ValidateProjectDates(DateTime? endDate, ValidationContext context)

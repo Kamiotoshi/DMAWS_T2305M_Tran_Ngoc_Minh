@@ -13,5 +13,5 @@ public class ProjectEmployee
     public string Tasks { get; set; }
 
     public virtual Employee Employees { get; set; }
-    public virtual Project Projects { get; set; }
+    public virtual Project? Projects { get; set; }  // Sửa thành nullable
 }

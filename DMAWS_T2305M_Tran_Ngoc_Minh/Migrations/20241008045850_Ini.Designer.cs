@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DMAWS_T2305M_Tran_Ngoc_Minh.Migrations
 {
     [DbContext(typeof(DMAWSContext))]
-    [Migration("20241008041647_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20241008045850_Ini")]
+    partial class Ini
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
